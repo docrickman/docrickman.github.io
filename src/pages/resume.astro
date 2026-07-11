@@ -38,6 +38,56 @@ import Layout from '../layouts/BlogPost.astro';
 		<li>Mentor one Tier 1 technician directly; wrote the training path to scale past one.</li>
 	</ul>
 
+	<h3>Skills</h3>
+	<p>If it's listed, I've used it on real work with real consequences. No stars, no bars.</p>
+
+	<h4>Enterprise IT</h4>
+	<div class="chips">
+		<span class="chip">Active Directory</span>
+		<span class="chip">Microsoft 365</span>
+		<span class="chip">Intune</span>
+		<span class="chip">Azure Purview</span>
+		<span class="chip">ConfigMgr</span>
+		<span class="chip">GCC High operations</span>
+	</div>
+
+	<h4>Scripting and code</h4>
+	<div class="chips">
+		<span class="chip">PowerShell</span>
+		<span class="chip">Python</span>
+		<span class="chip">Node.js</span>
+		<span class="chip">C#</span>
+		<span class="chip">React</span>
+		<span class="chip">Lua (Kahlua)</span>
+		<span class="chip">Git &amp; GitHub Actions</span>
+	</div>
+
+	<h4>Lab and OT</h4>
+	<div class="chips">
+		<span class="chip">LabVIEW environments</span>
+		<span class="chip">NI cRIO</span>
+		<span class="chip">OPC UA</span>
+		<span class="chip">Siemens-based systems</span>
+		<span class="chip">Air-gapped operations</span>
+		<span class="chip">Purdue model (PERA)</span>
+	</div>
+
+	<h4>Process and writing</h4>
+	<div class="chips">
+		<span class="chip">Technical documentation</span>
+		<span class="chip">KB design</span>
+		<span class="chip">Jira/Confluence workflow design</span>
+		<span class="chip">Training paths</span>
+		<span class="chip">Mentorship</span>
+	</div>
+
+	<h4>AI tooling</h4>
+	<div class="chips">
+		<span class="chip">AI-assisted development</span>
+		<span class="chip">Agent skill authoring</span>
+		<span class="chip">MCP integrations</span>
+	</div>
+
 	<h3>Direction</h3>
 	<p>
 		OT/IT convergence: the industrial and lab-systems side of IT. Working toward GICSP.
@@ -49,3 +99,27 @@ import Layout from '../layouts/BlogPost.astro';
 		the portfolio; this page is just the frame around them.
 	</p>
 </Layout>
+
+<style>
+	h4 {
+		font-size: 1.05em;
+		margin: 1.25em 0 0.5em 0;
+		color: var(--accent-2);
+	}
+	.chips {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5em;
+	}
+	.chip {
+		display: inline-block;
+		padding: 0.15em 0.7em;
+		font-size: 0.82em;
+		line-height: 1.6;
+		color: rgb(var(--black));
+		background: var(--surface);
+		border: 1px solid rgb(var(--gray-light));
+		border-left: 3px solid var(--accent);
+		border-radius: 6px;
+	}
+</style>

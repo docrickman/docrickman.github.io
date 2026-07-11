@@ -22,13 +22,31 @@ const notes = (await getCollection('notes')).sort(
 			.intro {
 				margin-bottom: 2.5em;
 			}
+			h2 {
+				font-size: 1.75em;
+			}
+			h2::after {
+				content: '';
+				display: block;
+				width: 2.5rem;
+				height: 4px;
+				margin-top: 0.35rem;
+				border-radius: 2px;
+				background: linear-gradient(90deg, var(--accent), var(--accent-2));
+			}
 			.entry-list {
 				list-style: none;
-				margin: 0 0 2.5em 0;
+				margin: 0.75em 0 2.5em 0;
 				padding: 0;
 			}
 			.entry-list li {
 				margin-bottom: 1.25em;
+				padding-left: 0.85em;
+				border-left: 3px solid rgb(var(--gray-light));
+				transition: border-color 0.15s ease;
+			}
+			.entry-list li:hover {
+				border-left-color: var(--accent);
 			}
 			.entry-list a {
 				text-decoration: none;
@@ -39,19 +57,16 @@ const notes = (await getCollection('notes')).sort(
 				color: rgb(var(--black));
 			}
 			.entry-list a:hover h3 {
-				color: rgb(var(--accent));
+				color: var(--accent);
 			}
 			.entry-list .date {
 				margin: 0;
 				font-size: 0.85em;
-				color: rgb(var(--gray));
+				color: var(--accent-2);
 			}
 			.entry-list p.desc {
 				margin: 0.15em 0 0 0;
 				color: rgb(var(--gray-dark));
-			}
-			.more-link {
-				font-size: 0.9em;
 			}
 		</style>
 	</head>
