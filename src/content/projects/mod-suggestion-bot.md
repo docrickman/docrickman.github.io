@@ -30,4 +30,5 @@ got fixed, what to test. The people filing reports hear back, which is most of w
 filing them.
 
 Node.js 18+, discord.js, Steam's GetPublishedFileDetails endpoint, GitHub GraphQL for
-Projects v2, JSON-file persistence.
+Projects v2, JSON-file persistence. Source is in
+[pz-rppvp-ops](https://github.com/docrickman/pz-rppvp-ops).

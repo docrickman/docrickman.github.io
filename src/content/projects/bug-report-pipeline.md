@@ -32,4 +32,5 @@ retention. Anything diagnostic has to be captured at the moment it matters, by a
 because the moment is usually 2 a.m.
 
 Node.js, discord.js modal interactions, the Anthropic API, GitHub GraphQL, and a git repo doing
-archival duty.
+archival duty. The bot source is in
+[pz-rppvp-ops](https://github.com/docrickman/pz-rppvp-ops).

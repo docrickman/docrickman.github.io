@@ -33,4 +33,6 @@ It also seeded six reusable skills for AI-assisted mod work — Kahlua conventio
 structure, React-to-ISUI porting, server configuration, log triage, and ticket filing. Writing
 tooling for the AI collaborator, not just with it.
 
-Most of this pipeline still doesn't exist. That's the design working as intended.
+Most of this pipeline still doesn't exist. That's the design working as intended. The design
+docs are published in [pz-rppvp-ops](https://github.com/docrickman/pz-rppvp-ops), so you can
+check my math.

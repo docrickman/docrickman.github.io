@@ -24,3 +24,8 @@ standing up a service.
 It earns its keep three ways: sanity-checking rarity-factor changes against the loot tiers
 players actually care about, planning scarcity events against real spawn data instead of vibes,
 and turning "loot feels wrong" reports into checkable claims.
+
+The browser and tables are published in
+[pz-loot-browser](https://github.com/docrickman/pz-loot-browser), and the working copy lives
+alongside the rest of the server tooling in
+[pz-rppvp-ops](https://github.com/docrickman/pz-rppvp-ops).

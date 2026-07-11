@@ -28,4 +28,5 @@ case-sensitivity failures that plague Windows-authored mods on a Linux host — 
 the watcher before any player noticed.
 
 Python 3, paramiko, requests. Secrets come from environment variables; nothing sensitive lives
-in the file.
+in the file. The script is in
+[pz-rppvp-ops](https://github.com/docrickman/pz-rppvp-ops).
