@@ -1,0 +1,54 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="About"
+	description="Who I am and where this is going."
+	pubDate={new Date('July 11 2026')}
+>
+	<p>
+		I'm Jonah. I work in IT at TerraPower, a nuclear energy R&amp;D company. It's my first IT
+		job. The title says Tier 1–2 support; the work stopped matching the title a while ago.
+	</p>
+
+	<p>
+		The enterprise half of the job is Active Directory and M365 administration: onboarding,
+		offboarding, security groups, license lifecycle, auditing. When I started, the team ran on
+		one-off scripts nobody could safely rerun. The tooling now has input validation, dry-run
+		modes, structured logging, and lives in version control with a change-review process — all
+		of which I introduced. I also wrote the guide that got technicians with no programming
+		background using Git, because tooling nobody adopts is just a repo.
+	</p>
+
+	<p>
+		The lab side of the job — cRIO controllers, LabVIEW experiment rigs, instruments,
+		air-gapped machines, experiments that run 24/7 — turned out to be the part I actually
+		like. I've been building that support function into something deliberate: asset inventory,
+		decision frameworks, a technician training path, and a Purdue-model classification of lab
+		assets to find the security gaps. That's the direction everything here bends: OT/IT
+		convergence, with GICSP as the next milestone. Not aspiring to it. Already doing the
+		unglamorous first parts of it.
+	</p>
+
+	<p>
+		Off the clock I run a roleplay-PVP Project Zomboid server with my friend ATPot. Ninety-odd
+		mods, a managed host with SFTP-only access, and real players finding real bugs. Most of
+		the projects on this site came out of keeping that world alive.
+	</p>
+
+	<p>
+		I use AI tooling heavily and openly. It writes a lot of first drafts; I catch its bugs and
+		it catches mine. The judgment calls stay human. That's stated once, here, and assumed
+		everywhere else on the site.
+	</p>
+
+	<p>
+		There's also a personal finance dashboard that pulls live bank data over MCP into a local
+		browser page. It works, and it stays private, which is the whole point of it.
+	</p>
+
+	<p>
+		I'm on GitHub as <a href="https://github.com/docrickman">docrickman</a>.
+	</p>
+</Layout>

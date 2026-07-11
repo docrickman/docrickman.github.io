@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+	title="Resume"
+	description="The short version."
+	pubDate={new Date('July 11 2026')}
+>
+	<h2>Jonah Weber</h2>
+	<p>Bothell, WA · <a href="https://github.com/docrickman">github.com/docrickman</a></p>
+
+	<h3>TerraPower — IT support, Tier 1–2</h3>
+	<p>
+		IT for a nuclear energy R&amp;D company operating in a compliance-heavy government-cloud
+		environment. Functionally the senior technical member of the team, with no Tier 3 above.
+	</p>
+	<ul>
+		<li>
+			Active Directory and M365 administration: account lifecycle, security groups, licensing,
+			auditing via Purview, Intune, and the Azure security dashboard.
+		</li>
+		<li>
+			Took the team's PowerShell from ad-hoc one-offs to production tooling: input validation,
+			dry-run modes, structured logging, error discrimination. Introduced version control and
+			change review where neither existed.
+		</li>
+		<li>
+			Lab IT support: LabVIEW experiment rigs, NI cRIO controllers, Siemens-based systems,
+			scientific instruments, air-gapped machines, 24/7 uptime constraints. Ran a Purdue-model
+			classification and gap analysis of lab assets.
+		</li>
+		<li>
+			Documentation and process design: KB authorship, a Jira-based documentation
+			change-management workflow, technician training paths, and a Git onboarding guide
+			written for readers with zero programming background.
+		</li>
+		<li>Mentor one Tier 1 technician directly; wrote the training path to scale past one.</li>
+	</ul>
+
+	<h3>Direction</h3>
+	<p>
+		OT/IT convergence — the industrial and lab-systems side of IT. Working toward GICSP.
+	</p>
+
+	<h3>Elsewhere</h3>
+	<p>
+		The <a href="/projects">projects</a> and <a href="/notes">write-ups</a> on this site are
+		the portfolio; this page is just the frame around them.
+	</p>
+</Layout>

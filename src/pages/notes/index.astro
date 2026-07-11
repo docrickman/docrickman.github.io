@@ -1,0 +1,77 @@
+---
+import { getCollection } from 'astro:content';
+import BaseHead from '../../components/BaseHead.astro';
+import Footer from '../../components/Footer.astro';
+import FormattedDate from '../../components/FormattedDate.astro';
+import Header from '../../components/Header.astro';
+import { SITE_TITLE } from '../../consts';
+
+const notes = (await getCollection('notes')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={`Write-ups — ${SITE_TITLE}`}
+			description="Diagnostic write-ups: how problems actually got solved."
+		/>
+		<style>
+			.note-list {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			.note-list li {
+				margin-bottom: 1.5em;
+			}
+			.note-list a {
+				text-decoration: none;
+			}
+			.note-list h3 {
+				margin: 0;
+				color: rgb(var(--black));
+			}
+			.note-list a:hover h3 {
+				color: rgb(var(--accent));
+			}
+			.note-list .date {
+				margin: 0;
+				font-size: 0.9em;
+				color: rgb(var(--gray));
+			}
+			.note-list p.desc {
+				margin: 0.25em 0 0 0;
+				color: rgb(var(--gray-dark));
+			}
+		</style>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Write-ups</h1>
+			<p>
+				Diagnosis is a method, and repos don't show it. These are accounts of problems that
+				resisted the obvious answer, including one that isn't a computer.
+			</p>
+			<ul class="note-list">
+				{
+					notes.map((note) => (
+						<li>
+							<a href={`/notes/${note.id}/`}>
+								<h3>{note.data.title}</h3>
+								<p class="date">
+									<FormattedDate date={note.data.pubDate} />
+								</p>
+								<p class="desc">{note.data.description}</p>
+							</a>
+						</li>
+					))
+				}
+			</ul>
+		</main>
+		<Footer />
+	</body>
+</html>
