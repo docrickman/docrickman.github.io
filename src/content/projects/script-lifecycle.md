@@ -11,7 +11,7 @@ for a helpdesk. Not acceptable for scripts that touch every account in the compa
 The fix had two halves, and the second was harder.
 
 The mechanical half: a repo for production scripts, a change-review step before anything
-lands, and a working definition of what "production" means. Nothing clever here — the whole
+lands, and a working definition of what "production" means. Nothing clever here; the whole
 point is that it's boring.
 
 The adoption half: my teammates are good technicians, not programmers, and a Git tutorial

@@ -20,4 +20,4 @@ it. That bootstrap is designed and researched, not shipped.
 
 So, status, plainly: capture, encoding, and the ITD/head-shadow path work; the OpenAL migration
 is a plan with evidence behind it; the mod as a whole is unfinished. It's on this site because
-the exploration is the value — it's the project where I learned how humans locate sound.
+the exploration is the value. It's the project where I learned how humans locate sound.

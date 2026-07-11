@@ -16,7 +16,7 @@ const projects = defineCollection({
 	schema: entrySchema,
 });
 
-// Diagnostic write-ups — blog-shaped, method-focused.
+// Diagnostic write-ups: blog-shaped, method-focused.
 const notes = defineCollection({
 	loader: glob({ base: './src/content/notes', pattern: '**/*.{md,mdx}' }),
 	schema: entrySchema,

@@ -5,7 +5,7 @@ pubDate: 'Jun 3 2026'
 ---
 
 The car lost power in right turns. Only right turns. That's not an electrical fault, that's a
-mechanical fault with an electrical symptom — and that observation is what eventually cracked
+mechanical fault with an electrical symptom, and that observation is what eventually cracked
 it. It just took me a while to let myself believe it.
 
 Some backstory, because the dash made this harder than it needed to be. Before the power loss
@@ -19,14 +19,14 @@ Intermittent faults are miserable for a specific reason: every test you run whil
 isn't happening returns "fine." Battery reads fine. Connections look fine. Codes are vague.
 You can burn weekends swapping parts on a car that passes every bench test you can throw at
 it. The move that actually works is to stop interrogating components and start characterizing
-the trigger. When exactly does it happen? Not speed — happened slow and fast. Not temperature,
+the trigger. When exactly does it happen? Not speed; it happened slow and fast. Not temperature,
 not engine load. Lateral force. In one direction. Something conductive was moving, and it only
 moved when the body rolled left.
 
 Once the question became "what conductive thing near the battery moves under right-turn body
 flex," the answer was sitting in plain sight: the metal battery hold-down bracket, close
 enough to the positive post to kiss it when the chassis flexed. Direct short, voltage
-collapses, every module on the bus browns out at once — which retroactively explained the
+collapses, every module on the bus browns out at once, which retroactively explained the
 scattershot warnings. The modules weren't failing. They were all victims of the same sag.
 
 The confirming evidence was better than a code: a dead short across a car battery is briefly

@@ -6,7 +6,7 @@ pubDate: 'Jul 10 2026'
 
 After ATPot and I activated a batch of ~96 mods, reports came in from every corner of the map:
 no guns, no cookware, loot's broken. The obvious suspect was the gun-mod chain, which
-deliberately removes vanilla firearms and substitutes its own — if it removed without inserting,
+deliberately removes vanilla firearms and substitutes its own. If it removed without inserting,
 empty gun stores are exactly what you'd see.
 
 The obvious move was to start patching loot tables. We measured instead.
@@ -25,7 +25,7 @@ containers were still empty.
 
 Project Zomboid rolls a cell's loot once, on first load, and never again unless respawn is
 enabled. Ours was off, on purpose, for a scarcity ruleset. An earlier soft wipe had reset player
-data but kept the map — so every explored cell was still serving loot rolled under the old mod
+data but kept the map, so every explored cell was still serving loot rolled under the old mod
 list. The new mods weren't broken. They'd just never been rolled anywhere anyone had been.
 
 ## The fix

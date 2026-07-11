@@ -11,7 +11,7 @@ Enterprise IT process mostly doesn't fit, and the historical result was lab supp
 tribal knowledge.
 
 I've been running a program to replace the tribal knowledge with a function. A real asset
-inventory — custodians, lifecycle, peripherals, software — instead of a spreadsheet of
+inventory (custodians, lifecycle, peripherals, software) instead of a spreadsheet of
 hostnames. Documented support processes and decision frameworks, so "what do we do when an
 instrument PC dies mid-experiment" has an answer that doesn't depend on who's on shift. A
 revised SLA that's honest about what 24/7 experiments require. A technician training path, so

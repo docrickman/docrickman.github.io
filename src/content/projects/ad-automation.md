@@ -1,11 +1,11 @@
 ---
 title: 'AD automation: scripts you can trust at 4:50 on a Friday'
-description: 'The patterns behind a production PowerShell suite for Active Directory work, rebuilt publicly as generic demonstrations — never copied from work.'
+description: 'The patterns behind a production PowerShell suite for Active Directory work, rebuilt publicly as generic demonstrations. Never copied from work.'
 pubDate: 'Jun 15 2026'
 ---
 
-My team's Active Directory work — bulk attribute updates from CSV, OU auditing, security-group
-membership, license lifecycle, offboarding — runs on a PowerShell suite I evolved from a pile
+My team's Active Directory work (bulk attribute updates from CSV, OU auditing, security-group
+membership, license lifecycle, offboarding) runs on a PowerShell suite I evolved from a pile
 of one-off scripts into production tooling. The code itself lives in a government-cloud tenant
 and stays there. What appears publicly is reimplemented from scratch against a fictional
 domain, because scrubbed code leaks structure and rewriting is cheaper than risk.

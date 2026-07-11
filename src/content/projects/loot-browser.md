@@ -1,6 +1,6 @@
 ---
 title: 'Loot browser: the whole loot economy in one HTML file'
-description: 'Every Build 42 loot table — vanilla plus ~90 mods, with weights — in a single self-contained page you can search from a phone.'
+description: 'Every Build 42 loot table (vanilla plus ~90 mods, with weights) in a single self-contained page you can search from a phone.'
 pubDate: 'Jul 9 2026'
 ---
 

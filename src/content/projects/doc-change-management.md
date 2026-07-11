@@ -17,7 +17,7 @@ decision in the design exists to defend that line.
 Two issue types, not five. A single Documentation Change type with a change-type field covers
 new, edit, and retire; separate issue types for each would shred the board for no benefit. Gap
 is the one type that earns its own existence, because a gap can be legitimately deferred and a
-change can't — and the gap register is half the reason to build any of this.
+change can't. And the gap register is half the reason to build any of this.
 
 The audit trail costs nothing. Jira already logs every transition with user and timestamp. The
 single thing to enforce is a required approver field on the review-to-approved transition. That

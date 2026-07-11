@@ -12,7 +12,7 @@ me, from building it yet.
 Two decisions in it are the ones I'd keep under oath.
 
 **The airlock.** The design splits into two lanes. The unattended lane watches logs and
-produces exactly one thing: a ticket. The interactive lane — a human working with AI tooling —
+produces exactly one thing: a ticket. The interactive lane (a human working with AI tooling)
 is the only thing allowed to touch files, and only on the test server. Verified fixes get
 mirrored to production by hand. Nothing automated ever holds a write path to the world players
 live in, so the blast radius of any automation failure is the size of a ticket.
@@ -29,7 +29,7 @@ structured permission field, so it's prose-scavenging with honest states, and UN
 promotes to ALLOWED. Silence isn't consent. The preferred fix is one that never touches another
 author's files at all: config, load order, or a patch mod of our own.
 
-It also seeded six reusable skills for AI-assisted mod work — Kahlua conventions, Build 42 mod
+It also seeded six reusable skills for AI-assisted mod work: Kahlua conventions, Build 42 mod
 structure, React-to-ISUI porting, server configuration, log triage, and ticket filing. Writing
 tooling for the AI collaborator, not just with it.
 

@@ -10,8 +10,8 @@ head" stopped working around mod fifteen. We're past ninety.
 
 Any Workshop link posted in the suggestions channel becomes a ticket, with the mod's real
 title, author, and thumbnail pulled from Steam's public API (no key needed). Tickets move
-through an 11-stage pipeline — Suggested, Vouched, Assessing, Testing, Configuring, Bug
-Testing, On Hold, Approved, Staged, Live, Rejected — via a dropdown, and forum tags follow
+through an 11-stage pipeline (Suggested, Vouched, Assessing, Testing, Configuring, Bug
+Testing, On Hold, Approved, Staged, Live, Rejected) via a dropdown, and forum tags follow
 along. Anyone can mark themselves Interested, which is a demand signal. Reviewers Vouch to
 commit to actually evaluating something, which advances it automatically. The distinction
 matters: "I want this" and "I'll do the work" are different currencies, and the pipeline
@@ -26,8 +26,8 @@ double-post and downtime never loses a suggestion. It doesn't need to be running
 correct.
 
 Living on a desktop shaped the smaller decisions too. A lock file with a PID-liveness check
-stops the login-time autostart and a manual launch from both connecting on one token —
-two live instances means every ticket processed twice, which you learn exactly once. The
+stops the login-time autostart and a manual launch from both connecting on one token.
+Two live instances means every ticket processed twice, which you learn exactly once. The
 JSON database writes to a temp file and renames into place, so a crash mid-write can't
 corrupt the store. None of this is exotic. All of it is the difference between a bot you
 trust and a bot you babysit.
