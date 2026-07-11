@@ -29,4 +29,4 @@ restored to its exact prior state. If you can't undo it, you shouldn't be automa
 change log records what happened, not what was attempted.
 
 The first public reimplementation is the CSV bulk-update tool, the densest showcase of these
-patterns — repo linked from my <a href="https://github.com/docrickman">GitHub profile</a>.
+patterns: [ad-csv-bulk-update](https://github.com/docrickman/ad-csv-bulk-update).
