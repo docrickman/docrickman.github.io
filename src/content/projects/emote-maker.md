@@ -14,9 +14,12 @@ carries full 8-bit alpha, and browsers can't write it. Neither could any depende
 willing to take, because the other constraint was no libraries and no CDN — the tool is
 self-contained and works offline.
 
-So the encoder is hand-rolled from the PNG spec: chunk structure, CRC32, the acTL/fcTL/fdAT
-frame sequencing that makes a PNG animate, compression via the browser's built-in
-CompressionStream. Producing bytes that decoders accept is a different exercise from calling
-someone else's encode(), and it's the part of this project that taught the most.
+So the encoder is hand-rolled from the PNG spec: chunk structure, CRC32 over the right byte
+ranges, and the acTL/fcTL/fdAT frame sequencing that makes a PNG animate — including the
+sequence numbering that decoders validate and the spec buries in a table. Producing bytes
+that decoders accept is a different exercise from calling someone else's encode(). The spec
+tells you what a valid file contains; it doesn't tell you which mistake you made when the
+image viewer shows frame one and stops. That debugging loop, hex dump against spec table, is
+the part of this project that taught the most.
 
 GIF and WebM export are in there too, for the platforms that want them.
